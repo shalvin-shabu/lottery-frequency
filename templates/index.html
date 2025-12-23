@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lottery Frequency Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+        
+        input {
+            padding: 8px;
+            margin: 5px 0;
+            width: 200px;
+        }
+        
+        button {
+            padding: 8px 12px;
+            margin-left: 5px;
+        }
+        
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Lottery Number Frequency Checker</h2>
+
+    <input id="num" placeholder="Enter 4-digit number">
+    <button onclick="checkFrequency()">Check Frequency</button>
+
+    <p id="result"></p>
+
+    <hr>
+
+    <h3>Add New Number</h3>
+
+    <input id="newNum" placeholder="Enter 4-digit number">
+    <button onclick="addNumber()">Add Number</button>
+
+    <hr>
+
+    <h3>Bulk Add Numbers from Text</h3>
+
+    <textarea id="bulkText" rows="10" cols="50" placeholder="Paste lottery result text here"></textarea><br>
+    <button onclick="bulkAddNumbers()">Add All 4-Digit Numbers</button>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
